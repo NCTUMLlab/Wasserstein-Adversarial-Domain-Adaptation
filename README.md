@@ -1,9 +1,10 @@
 # Wasserstein Adversarial Domain Adaptation Model for Image Recognition
 
+![WADA Model](./images/model.png)
+
 In this respository, we implmented our proposed Wasserstein adversarial domain adaptation (WADA) model for object recognition. Download link for dataset used to evaluate the model can be find in "data description" section.
 
 Our WADA model consists of source extractor, target extractor, task classifier, feature relator, and domain discriminator. Since optimal transport based metric like Wasserstein distance can avoid gradient vanishing caused in $f$-divergence, we apply it in adversarial domain adaptation model to stablize the training process and improve adaptation performance. In addition to traditional benchmark and task, we also apply our model to partial transfer learning issue which combined with regression form of GAN and relevance machenism to decide the weight of each pile during optimizing stage.
-
 
 
 # Data Description 
